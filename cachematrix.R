@@ -21,7 +21,7 @@ cacheSolve<-function(x,...){                                        #caching fun
         message("Fetching cached data...")
         return(matInv)
     }
-    mat<-x$getMat()                                                 #else, calculate the inverse
+    mat<-x$getMat()                                                 #else, calculate the inverse matrix
     matInv<-solve(mat)                                               
     x$setInv(matInv)
     matInv
